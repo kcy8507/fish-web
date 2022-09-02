@@ -449,8 +449,96 @@ body {
 
 .product__container {
   text-align: left;
+  margin-top: 9.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .product__product-img {
   background-image: url(/img/product.png);
+  width: 34.8rem;
+  height: 39.2rem;
+  background-position: center;
+  background-size: cover;
+}
+
+.product__product-detail {
+  width: 60%;
+}
+.product__product-detail p:nth-child(1) {
+  font-size: 3.8rem;
+  line-height: 7.6rem;
+  font-weight: 800;
+}
+.product__product-detail p:nth-child(2) {
+  font-size: 2rem;
+  line-height: 4.5rem;
+  font-weight: 600;
+  margin-top: 4rem;
+}
+.product__product-detail p:nth-child(3), .product__product-detail p:nth-child(4) {
+  font-size: 1.8rem;
+  line-height: 3rem;
+  margin-top: 7.5rem;
+}
+
+.product__table {
+  margin-top: 19rem;
+  display: flex;
+  flex-direction: row;
+}
+.product__table-box {
+  margin-right: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.product__table-box:nth-child(1) .table-box--img {
+  background-image: url(/img/product_img-1.png);
+  height: 7.4rem;
+  margin-top: 7.6rem;
+}
+.product__table-box:nth-child(1) .table-box--text {
+  margin-top: 9.1rem;
+}
+.product__table-box:nth-child(2) .table-box--img {
+  background-image: url(/img/product_img-2.png);
+  height: 9.2rem;
+  margin-top: 6.8rem;
+}
+.product__table-box:nth-child(2) .table-box--text {
+  margin-top: 8.2rem;
+}
+.product__table-box:nth-child(3) .table-box--img {
+  background-image: url(/img/product_img-3.png);
+  height: 14.5rem;
+  margin-top: 4.2rem;
+}
+.product__table-box:nth-child(3) .table-box--text {
+  margin-top: 5.6rem;
+}
+
+.table-box--img {
+  width: 42rem;
+  background-size: cover;
+  background-position: center;
+}
+
+.table-box--text {
+  text-align: left;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+}
+.table-box--text p:last-child {
+  margin-top: 3.5rem;
+  text-align: right;
+}
+
+.table-box--title {
+  width: 42rem;
+  height: 4.1rem;
+  background-color: #074999;
+  font-size: 2rem;
+  color: white;
+  line-height: 4rem;
 }/*# sourceMappingURL=style.css.map */
