@@ -39,14 +39,29 @@ $(function () {
     // $("body").animate();
     if ($(document).scrollTop() >= $(".nav").height()) {
       $(".nav, .dropdown").css({ backgroundColor: "white", borderBottom: "none" });
-      $(".nav li, nav a").css("color", "black");
+      $(".nav li, .nav a").css("color", "black");
       $(".dropdown").removeClass("flex__box");
       $(".nav__logo").css("backgroundImage", "url(img/logo_color.png)");
     } else {
       // $(".nav, .dropdown").css({ backgroundColor: "transparent", borderBottom: "1px solid white" });
       $(".nav, .dropdown").css({ backgroundColor: "transparent" });
-      $(".nav li, nav a").css("color", "white");
+      $(".nav li, .nav a").css("color", "white");
       $(".nav__logo").css("backgroundImage", "url(img/logo.png)");
     }
+  });
+
+  $(".nav__btn-mobile").click(function (e) {
+    console.log($(e.target));
+    // e.preventDefault();
+    $(".nav__menu-mobile").css("display", "flex");
+    $(".mobile_black").css("display", "flex");
+  });
+
+  $(".close_btn").click(function (e) {
+    console.log($(e.target));
+    // e.preventDefault();
+    $(".nav__menu-mobile").css("display", "none");
+    $(".mobile_black").css("display", "none");
+    // $(".nav").css("height", "100%");
   });
 });
