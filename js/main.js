@@ -26,9 +26,10 @@
 $(function () {
   $(".dropdown__menu").click(function (e) {
     console.log($(e.target));
-    e.preventDefault();
+    // e.preventDefault();
     $(".dropdown").toggleClass("flex__box");
     $(".nav").css("borderBottom", "1px solid #bcbcbc");
+    // $(".nav").css("height", "100%");
   });
 
   $(document).on("mousewheel", function (e) {
@@ -40,10 +41,12 @@ $(function () {
       $(".nav, .dropdown").css({ backgroundColor: "white", borderBottom: "none" });
       $(".nav li, nav a").css("color", "black");
       $(".dropdown").removeClass("flex__box");
+      $(".nav__logo").css("backgroundImage", "url(img/logo_color.png)");
     } else {
       // $(".nav, .dropdown").css({ backgroundColor: "transparent", borderBottom: "1px solid white" });
       $(".nav, .dropdown").css({ backgroundColor: "transparent" });
       $(".nav li, nav a").css("color", "white");
+      $(".nav__logo").css("backgroundImage", "url(img/logo.png)");
     }
   });
 });
