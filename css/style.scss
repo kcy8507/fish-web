@@ -1230,6 +1230,12 @@ table.board-table {
     height: 27.7rem;
     margin-top: 5.5rem;
   }
+  .sub__detail-profile {
+    flex-direction: column;
+  }
+  .sub__detail-profile--text {
+    margin-top: 4rem;
+  }
   .sub__detail-profile--img {
     margin-right: 5.6rem;
   }
@@ -1558,6 +1564,7 @@ table.board-table {
     height: 27.7rem;
     margin-top: 4rem;
   }
+
   .sub__detail-profile--img {
     margin-right: 2.3rem;
   }
@@ -1719,4 +1726,10 @@ table.board-table {
     }
   }
   //notice.html end
+}
+
+@media screen and (max-width: 430px) {
+  html {
+    font-size: 60%;
+  }
 }
