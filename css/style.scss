@@ -742,12 +742,12 @@ body {
   display: flex;
   flex-direction: column;
   // max-width: calc((100% / 3) - 2rem);
-  // width: calc((100% / 3) - 2rem);
+  width: calc((100% / 3) - 2rem);
 }
 .news__card {
-  // width: 100%;
-  width: 41.8rem;
-  height: 41.8rem;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
   background-color: $main__point-color;
   border-radius: 1rem;
   a {
@@ -805,7 +805,7 @@ table.board-table {
 .board-table a {
   color: #333;
   display: inline-block;
-  line-height: 1.4rem;
+  line-height: 3rem;
   word-break: break-all;
   vertical-align: middle;
 }
@@ -1343,6 +1343,7 @@ table.board-table {
     .story__img {
       margin-right: 0;
       background-image: url(/img/story_img-1--992.png);
+      background-size: cover;
     }
   }
   .story__container-2 {
@@ -1351,6 +1352,7 @@ table.board-table {
       margin-left: 0;
       order: 0;
       background-image: url(/img/story_img-2--992.png);
+      background-size: cover;
     }
     .story__detail {
       order: 1;
@@ -1360,6 +1362,7 @@ table.board-table {
     margin-top: 7.5rem;
     .story__img {
       background-image: url(/img/story_img-3--992.png);
+      background-size: contain;
     }
   }
   // story.html end
@@ -1367,10 +1370,8 @@ table.board-table {
   .news__card-container {
     justify-content: space-evenly;
   }
-
-  .news__card {
-    width: 46.2rem;
-    height: 46.2rem;
+  .news__card-box {
+    width: calc((100% / 2) - 2rem);
   }
   .news__text .news__date {
     display: none;
@@ -1578,6 +1579,9 @@ table.board-table {
   .ceo__text {
     margin-top: 5rem;
   }
+  .ceo__img {
+    width: 100%;
+  }
   // intro.html end
 
   //tech.html start
@@ -1620,6 +1624,11 @@ table.board-table {
   .product__table-box {
     width: 100%;
   }
+  .product__table-box {
+    &:nth-child(2) {
+      margin-top: 7.5rem;
+    }
+  }
   //product.html end
 
   //story.html start
@@ -1653,14 +1662,6 @@ table.board-table {
   //story.html end
 
   //news.html start
-
-  .news__card-container {
-    margin-top: 5.7rem;
-  }
-  .news__card {
-    width: 25.6rem;
-    height: 25.6rem;
-  }
 
   .news__text .news__title {
     font-size: 1.6rem;
