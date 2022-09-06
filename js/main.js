@@ -64,4 +64,18 @@ $(function () {
     $(".mobile_black").css("display", "none");
     // $(".nav").css("height", "100%");
   });
+
+  $(document).on("touchmove", function (e) {
+    console.log($(document).scrollTop());
+
+    if ($(document).scrollTop() >= $(".nav__mobile").height()) {
+      $(".nav__mobile").css({ backgroundColor: "white" });
+      $(".nav__logo-mobile").css("backgroundImage", "url(img/logo_color.png)");
+      $(".nav__btn-mobile").css("backgroundImage", "url(img/nav_btn-black.png)");
+    } else {
+      $(".nav__mobile").css({ backgroundColor: "transparent" });
+      $(".nav__logo-mobile").css("backgroundImage", "url(img/logo.png)");
+      $(".nav__btn-mobile").css("backgroundImage", "url(img/nav_btn-wht.png)");
+    }
+  });
 });
