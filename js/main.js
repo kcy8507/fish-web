@@ -55,6 +55,8 @@ $(function () {
     // e.preventDefault();
     $(".nav__menu-mobile").css("display", "flex");
     $(".mobile_black").css("display", "flex");
+
+    $("html").css("overflow", "hidden");
   });
 
   $(".close_btn").click(function (e) {
@@ -63,6 +65,7 @@ $(function () {
     $(".nav__menu-mobile").css("display", "none");
     $(".mobile_black").css("display", "none");
     // $(".nav").css("height", "100%");
+    $("html").css("overflow", "inherit");
   });
 
   $(document).on("touchmove", function (e) {
