@@ -1067,6 +1067,32 @@ table.board-table {
 }
 // contact.html end
 
+@media screen and (max-width: 1450px) {
+  // sub design start
+  .intro,
+  .tech,
+  .product,
+  .story,
+  .news,
+  .notice,
+  .facility,
+  .contact {
+    .inner {
+      max-width: calc(100% - 4rem);
+    }
+  }
+  .sub__detail-1,
+  .sub__detail-2,
+  .sub__detail-3,
+  .sub__detail-4 {
+    .inner {
+      max-width: calc(100% - 4rem);
+      padding: 6rem 0 8rem 0;
+    }
+  }
+  // sub design end
+}
+
 @media screen and (max-width: 1250px) {
   // sub design start
   .intro,
@@ -1696,6 +1722,9 @@ table.board-table {
   // contact.html start
   .contact_form_wrap {
     margin-top: 0;
+  }
+  .sub__detail-title--bottom_contact {
+    width: 100%;
   }
   // contact.html end
 
