@@ -25,7 +25,7 @@ html {
 body {
   position: relative;
   color: #272727;
-  font-family: "Pretendard";
+  font-family: "Pretendard", "Apple SD Gothic Neo";
   font-size: 1.6rem;
 }
 
@@ -999,7 +999,7 @@ table.board-table {
 }
 
 .button-success {
-  font-family: "Pretendard";
+  font-family: "Pretendard", "Apple SD Gothic Neo";
   align-self: flex-end;
   margin-top: 7.2rem;
   border: none;
