@@ -1610,4 +1610,10 @@ table.board-table {
   html {
     font-size: 60%;
   }
+  .main__title {
+    font-size: 3.8rem;
+  }
+  .close_btn {
+    margin-bottom: -50px;
+  }
 }/*# sourceMappingURL=style.css.map */
