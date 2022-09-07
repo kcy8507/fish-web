@@ -1,5 +1,5 @@
 @import url(./reset.css);
-@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable.css");
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css");
 @font-face {
   font-family: "KOHIBaeumOTF";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/KOHIBaeumOTF.woff") format("woff");
@@ -25,7 +25,7 @@ html {
 body {
   position: relative;
   color: #272727;
-  font-family: "Pretendard", "Apple SD Gothic Neo";
+  font-family: "Pretendard";
   font-size: 1.6rem;
 }
 
@@ -999,7 +999,7 @@ table.board-table {
 }
 
 .button-success {
-  font-family: "Pretendard", "Apple SD Gothic Neo";
+  font-family: "Pretendard";
   align-self: flex-end;
   margin-top: 7.2rem;
   border: none;
