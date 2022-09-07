@@ -25,7 +25,7 @@
 
 $(function () {
   $(".dropdown__menu").click(function (e) {
-    console.log($(e.target));
+    // console.log($(e.target));
     // e.preventDefault();
     $(".dropdown").toggleClass("flex__box");
     $(".nav").css("borderBottom", "1px solid #bcbcbc");
@@ -34,7 +34,7 @@ $(function () {
 
   $(document).on("mousewheel", function (e) {
     var wheel = e.originalEvent.wheelDelta;
-    console.log($(document).scrollTop());
+    // console.log($(document).scrollTop());
     // console.log(wheel);
     // $("body").animate();
     if ($(document).scrollTop() >= $(".nav").height()) {
@@ -51,7 +51,7 @@ $(function () {
   });
 
   $(".nav__btn-mobile").click(function (e) {
-    console.log($(e.target));
+    // console.log($(e.target));
     // e.preventDefault();
     $(".nav__menu-mobile").css("display", "flex");
     $(".mobile_black").css("display", "flex");
@@ -60,7 +60,7 @@ $(function () {
   });
 
   $(".close_btn").click(function (e) {
-    console.log($(e.target));
+    // console.log($(e.target));
     // e.preventDefault();
     $(".nav__menu-mobile").css("display", "none");
     $(".mobile_black").css("display", "none");
@@ -69,7 +69,7 @@ $(function () {
   });
 
   $(document).on("touchmove", function (e) {
-    console.log($(document).scrollTop());
+    // console.log($(document).scrollTop());
 
     if ($(document).scrollTop() >= $(".nav__mobile").height()) {
       $(".nav__mobile").css({ backgroundColor: "white" });
