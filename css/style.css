@@ -195,13 +195,22 @@ body {
   height: 8rem;
 }
 
-.main {
-  max-width: 192rem;
+#video_area {
+  padding: 0;
+  width: 100vw;
   height: 100vh;
-  background-image: url(/img/main.png);
-  background-size: cover;
-  background-position: center;
-  padding-bottom: 56.25%;
+  overflow: hidden;
+  position: absolute;
+}
+
+#background_video {
+  z-index: -1;
+  height: 100vh;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
 }
 .main .inner {
   max-width: calc(100% - 13.6rem);
@@ -211,6 +220,7 @@ body {
 }
 .main__content {
   margin-top: 15.6rem;
+  z-index: 1;
 }
 .main__title {
   font-family: "KOHIBaeumOTF";
@@ -1614,5 +1624,11 @@ table.board-table {
   }
   .close_btn {
     margin-bottom: -50px;
+  }
+}
+@media screen and (max-aspect-ratio: 1219/685) {
+  #background_video {
+    width: auto;
+    height: 100vh;
   }
 }/*# sourceMappingURL=style.css.map */
