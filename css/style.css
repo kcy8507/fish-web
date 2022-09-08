@@ -510,6 +510,9 @@ body {
   line-height: 3rem;
   margin-top: 7.5rem;
 }
+.product__product-detail p:nth-child(4) {
+  margin-top: 0;
+}
 
 .product__table {
   margin-top: 19rem;
