@@ -6,6 +6,12 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 * {
   box-sizing: border-box;
 }
@@ -25,8 +31,13 @@ html {
 body {
   position: relative;
   color: #272727;
+  z-index: 0;
   font-family: "Pretendard";
   font-size: 1.6rem;
+}
+
+button {
+  cursor: pointer;
 }
 
 .inner {
@@ -39,7 +50,11 @@ body {
 .footer,
 .main,
 .main-2,
-.main-3 {
+.main-3,
+.about,
+.about-2,
+.company,
+.map {
   background-size: cover;
   background-position: center;
 }
@@ -48,7 +63,11 @@ body {
 .footer .inner,
 .main .inner,
 .main-2 .inner,
-.main-3 .inner {
+.main-3 .inner,
+.about .inner,
+.about-2 .inner,
+.company .inner,
+.map .inner {
   max-width: calc(100% - 62rem);
   padding: 9.7rem 0 20.8rem 0;
   display: flex;
@@ -69,7 +88,7 @@ body {
   justify-content: space-between;
 }
 .nav__logo {
-  width: 25rem;
+  width: 17rem;
   height: 4.2rem;
   background-image: url(/img/logo.png);
   background-size: contain;
@@ -94,6 +113,7 @@ body {
 }
 
 .nav__menu-btn {
+  cursor: pointer;
   width: 5rem;
   height: 5rem;
   background-image: url(/img/menu_btn.png);
@@ -113,7 +133,7 @@ body {
   justify-content: space-between;
 }
 .side__nav__logo {
-  width: 25rem;
+  width: 17rem;
   height: 4.2rem;
   background-image: url(/img/logo_color.png);
   background-size: contain;
@@ -144,6 +164,19 @@ body {
   justify-content: flex-start;
   flex-direction: column;
 }
+.side__nav-list--title:hover a {
+  color: white;
+  transition: all 1s;
+}
+.side__nav-list--title:hover, .side__nav-list--title:hover .side__nav-list--content a {
+  color: white;
+  cursor: pointer;
+  transition: all 1s;
+}
+.side__nav-list--title:hover .side__nav-list--content:before {
+  background-color: #2b4d84;
+  transition: all 1s;
+}
 .side__nav-list--box {
   display: flex;
   margin-top: 1.6rem;
@@ -158,7 +191,7 @@ body {
   content: "";
   width: 0.8rem;
   height: 0.8rem;
-  background-color: #2b4d84;
+  background-color: #565656;
   border-radius: 100%;
   display: inline-flex;
   margin-right: 1.2rem;
@@ -189,6 +222,7 @@ body {
 }
 
 .nav__menu-cls {
+  cursor: pointer;
   width: 5rem;
   height: 5rem;
 }
@@ -346,7 +380,11 @@ ul.slick-dots button {
   padding-bottom: 56.25%;
   background-repeat: no-repeat;
 }
+.main-3 iframe {
+  z-index: -1;
+}
 .main-3 .inner {
+  z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -354,7 +392,6 @@ ul.slick-dots button {
   padding-top: 60rem;
 }
 .main-3__content {
-  z-index: 1;
   width: 100%;
   text-align: left;
   display: flex;
@@ -371,9 +408,6 @@ ul.slick-dots button {
   color: white;
   font-size: 2rem;
   line-height: 3.8rem;
-}
-.main-3 a {
-  z-index: 1;
 }
 .main-3__btn {
   width: 17.2rem;
@@ -394,27 +428,414 @@ ul.slick-dots button {
   font-weight: 100;
 }
 .footer .inner {
-  padding: 5.9rem 0;
+  padding: 6rem 0;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: stretch;
   justify-content: space-between;
 }
 .footer__logo {
-  width: 25rem;
+  width: 17rem;
   height: 4.2rem;
   background-image: url(/img/logo_color.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
-.footer p {
+.footer__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 3.4rem;
+}
+.footer__content p {
+  color: #cccccc;
+  font-size: 1.6rem;
+  font-weight: 200;
+  line-height: 1.9rem;
+  text-align: left;
+  margin-top: 2.4rem;
+}
+.footer__btn {
+  display: flex;
+  align-items: flex-end;
+}
+.footer__btn a {
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+}
+.footer__btn button {
+  font-family: "Pretendard";
+  color: #c8c8c8;
+  width: 14.8rem;
+  height: 3.9rem;
+  border: 1px solid #707070;
+  background: none;
+}
+.footer__btn .footer__btn-1 {
+  margin-right: 1.4rem;
+}
+
+.subtitle__intro {
+  width: 100vw;
+  height: 50rem;
+  background-image: url(/img/intro_bg.png);
+  background-size: cover;
+  background-position: center;
+}
+.subtitle__intro .inner {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.subtitle__title p:first-of-type {
+  font-size: 5.4rem;
+  font-weight: 600;
   color: white;
+}
+.subtitle__title p:last-of-type {
+  font-size: 2.2rem;
+  color: white;
+  font-weight: 200;
+  margin-top: 2.2rem;
+}
+.subtitle__btn {
+  margin-top: 6.5rem;
+}
+.subtitle__btn button {
+  color: white;
+  line-height: 3.6rem;
+  width: 11.6rem;
+  height: 3.8rem;
+  background: none;
+  border: 1px solid white;
+  border-radius: 3.1rem;
+  margin-right: 2.6rem;
+}
+.subtitle__btn .active__btn {
+  color: #363636;
+  background-color: white;
+}
+
+.about .inner {
+  padding: 11rem 0;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.about hr {
+  width: 100vw;
+  color: #cfcfcf;
+  position: absolute;
+  z-index: -1;
+  left: 0;
+}
+.about__title {
+  font-size: 4rem;
+  line-height: 6.3rem;
+  text-align: left;
+  color: #373737;
+  font-weight: 800;
+}
+.about__card {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 25.9rem;
+}
+.about__card .card__title {
+  font-family: "GmarketSansMedium";
+  font-size: 2.2rem;
+  font-weight: 800;
+}
+.about__card .card__subtitle {
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  font-weight: 300;
+  margin-top: 5.5rem;
+}
+.about__card .card__content {
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  margin-top: 6rem;
+}
+
+.about-2 {
+  background-image: url(/img/about_bg.png);
+  background-attachment: fixed;
+  background-position: top;
+  width: 100vw;
+  height: 100%;
+}
+.about-2 .inner {
+  padding: 16rem 0;
+  padding-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.about-2__title {
+  text-align: right;
+  color: white;
+  align-self: flex-end;
+}
+.about-2__title p:first-of-type {
+  font-size: 4rem;
+  line-height: 5.8rem;
+  font-weight: 800;
+}
+.about-2__title p:last-of-type {
+  margin-top: 3.4rem;
+  font-size: 1.8rem;
+  line-height: 4rem;
+}
+.about-2__content {
+  background-color: white;
+  width: 100vw;
+  height: 100%;
+  margin-top: 7.3rem;
+}
+.about-2__content .inner {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.about-2__content .card {
+  width: 50%;
+  text-align: left;
+}
+.about-2__content .card:nth-of-type(1) .card-icon {
+  background-image: url(/img/about-icon-1.png);
+  width: 5.1rem;
+  height: 5.1rem;
+  background-size: cover;
+  margin-bottom: 3rem;
+}
+.about-2__content .card:nth-of-type(2) .card-icon {
+  background-image: url(/img/about-icon-2.png);
+  width: 5.1rem;
+  height: 5.5rem;
+  background-size: cover;
+  margin-bottom: 3rem;
+}
+.about-2__content .card:nth-of-type(3) .card-icon {
+  background-image: url(/img/about-icon-3.png);
+  width: 4.3rem;
+  height: 5.8rem;
+  background-size: cover;
+  margin-bottom: 3rem;
+}
+.about-2__content .card:nth-of-type(4) .card-icon {
+  background-image: url(/img/about-icon-4.png);
+  width: 4.5rem;
+  height: 5.5rem;
+  background-size: cover;
+  margin-bottom: 3rem;
+}
+.about-2__content .card p {
+  margin-bottom: 3.6rem;
+}
+.about-2__content .card p:first-of-type {
+  font-size: 2.2rem;
+  font-family: "GmarketSansMedium";
+  font-weight: 800;
+  color: #373737;
+}
+.about-2__content .card p:last-of-type {
+  font-size: 1.6rem;
+  font-weight: 300;
   margin-top: 1.6rem;
+  margin-bottom: 10.7rem;
 }
-.footer p a {
-  text-decoration: none;
-  color: white;
+.about-2__content .card span {
+  font-size: 1.6rem;
+  margin-right: 2.4rem;
 }
-.footer .footer__br {
-  display: none;
+
+.company .inner {
+  padding: 11rem 0;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.company__title p {
+  text-align: left;
+}
+.company__title p:nth-child(1) {
+  font-size: 4rem;
+  line-height: 6.3rem;
+  color: #373737;
+  font-weight: 800;
+}
+.company__title p:nth-child(2) {
+  font-size: 1.8rem;
+  margin-top: 2.2rem;
+}
+.company__img {
+  background-image: url(/img/company__img.png);
+  width: 100%;
+  height: 34.6rem;
+  margin-top: 11rem;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.company__history {
+  font-size: 25.3rem;
+  color: #f6f6f6;
+  font-weight: 800;
+  rotate: 90deg;
+  position: absolute;
+  z-index: -1;
+  top: 160%;
+  right: -32%;
+}
+
+.entries {
+  width: calc(100% - 80px);
+  margin: auto;
+  position: relative;
+  left: -5px;
+}
+.entries:before {
+  content: "";
+  top: 0px;
+  left: 50%;
+  bottom: 0px;
+  position: absolute;
+  transform: translateX(-50%);
+  width: 4px;
+  background-color: rgba(43, 77, 132, 0.2941176471);
+}
+.entries .entry {
+  width: calc(50% - 80px);
+  float: right;
+  padding: 20px;
+  clear: both;
+  text-align: left;
+  padding-top: 110px;
+}
+.entries .entry:not(:first-child) {
+  margin-top: -60px;
+}
+.entries .entry .title {
+  font-size: 4.5rem;
+  font-weight: 800;
+  line-height: 8rem;
+  margin-bottom: 12px;
+  position: relative;
+  color: #373737;
+  border-bottom: 1px solid #707070;
+}
+.entries .entry .title:before {
+  content: "";
+  position: absolute;
+  width: 1.2rem;
+  height: 1.2rem;
+  background-color: #2b4d84;
+  border-radius: 100%;
+  top: 50%;
+  transform: translate(-106px, -50%);
+  z-index: 1;
+}
+.entries .entry .title.big:before {
+  transform: translate(8px, -50%);
+  background-color: #8a57b2;
+}
+.entries .entry .title.big {
+  text-align: right;
+}
+.entries .entry .body {
+  color: #373737;
+  margin-top: 4.5rem;
+}
+.entries .entry .body p {
+  margin-top: 2.5rem;
+  font-size: 1.8rem;
+}
+.entries .entry:nth-child(2n) {
+  text-align: left;
+  float: left;
+}
+.entries .entry:nth-child(2n) .title.big:before {
+  transform: translate(202px, -50%);
+}
+
+.map .inner {
+  padding: 11rem 0;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.map__title p {
+  text-align: left;
+}
+.map__title p:nth-child(1) {
+  font-size: 4rem;
+  line-height: 6.3rem;
+  color: #373737;
+  font-weight: 800;
+}
+.map__title p:nth-child(2) {
+  font-size: 1.8rem;
+  margin-top: 2.2rem;
+}
+.map__img {
+  background-image: url(/img/company__img.png);
+  width: 100%;
+  height: 41.5rem;
+  margin-top: 4.8rem;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.map hr {
+  width: 100%;
+  height: 1px;
+  color: #707070;
+  margin-top: 4.9rem;
+}
+.map__address {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.map__address-box {
+  width: 33.3333333333%;
+  text-align: left;
+  margin-top: 3.4rem;
+  color: #272727;
+}
+.map__address-box p:nth-of-type(1) {
+  margin-top: 2.7rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.map__address-box p:nth-of-type(2) {
+  margin-top: 2.1rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+.map__address-box:nth-child(1) .address-icon {
+  background-image: url(/img/address-icon-1.png);
+  width: 4.5rem;
+  height: 4.5rem;
+  background-size: cover;
+}
+.map__address-box:nth-child(2) .address-icon {
+  background-image: url(/img/address-icon-2.png);
+  width: 4.5rem;
+  height: 4.5rem;
+  background-size: cover;
+}
+.map__address-box:nth-child(3) .address-icon {
+  background-image: url(/img/address-icon-3.png);
+  width: 4.5rem;
+  height: 4.5rem;
+  background-size: cover;
 }/*# sourceMappingURL=style.css.map */
