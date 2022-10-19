@@ -64,7 +64,10 @@ button {
 .map,
 .product,
 .marine,
-.cs {
+.cs,
+.faq,
+.information,
+.information-2 {
   // height: 50rem;
   background-size: cover;
   background-position: center;
@@ -548,6 +551,20 @@ ul.slick-dots {
     width: 100vw;
     height: 50rem;
     background-image: url(/img/cs_bg.png);
+    background-size: cover;
+    background-position: center;
+    .inner {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  &__information {
+    width: 100vw;
+    height: 50rem;
+    background-image: url(/img/information_bg.png);
     background-size: cover;
     background-position: center;
     .inner {
@@ -1312,3 +1329,264 @@ ul.slick-dots {
   }
 }
 // cs end
+
+// faq start
+.faq {
+  .inner {
+    padding: 11rem 0;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  &__title {
+    p {
+      text-align: left;
+      &:nth-child(1) {
+        font-size: 4rem;
+        line-height: 6.3rem;
+        color: #373737;
+        font-weight: 800;
+      }
+      &:nth-child(2) {
+        font-size: 1.8rem;
+        margin-top: 1.8rem;
+      }
+    }
+  }
+  #board-list {
+    width: 100%;
+  }
+  table.board-table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-top: 9.5rem;
+    font-size: 1.8rem;
+    width: 100%;
+    border-top: 0.1rem solid #373737;
+  }
+
+  .board-table a {
+    color: #373737;
+    display: inline-block;
+    line-height: 3rem;
+    word-break: break-all;
+    vertical-align: middle;
+  }
+
+  .board-table thead {
+    font-weight: 700;
+
+    th {
+      padding: 2.3rem 0;
+    }
+  }
+  .board-table a:hover {
+    text-decoration: underline;
+  }
+  .board-table th {
+    text-align: center;
+  }
+
+  .board-table .th-num {
+    width: 10rem;
+    text-align: center;
+  }
+
+  .board-table .th-date {
+    width: 20rem;
+  }
+
+  .board-table th,
+  .board-table td {
+    padding: 2.3rem 0;
+  }
+
+  .board-table tbody {
+    border-bottom: 0.1rem solid #cccccc;
+  }
+  .board-table tbody td {
+    border-top: 0.1rem solid #cccccc;
+    color: #373737;
+    font-weight: 400;
+    text-align: center;
+    font-size: 1.6rem;
+  }
+
+  .board-table tbody th {
+    padding-left: 2.8rem;
+    padding-right: 1.4rem;
+    border-top: 0.1rem solid #cccccc;
+    text-align: left;
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+
+  .board-table tbody th p {
+    display: none;
+  }
+  .foot {
+    font-size: 2rem;
+    td {
+      padding-top: 9rem;
+      width: 100%;
+      text-align: center;
+    }
+    a {
+      margin-right: 3.2rem;
+      text-decoration: none;
+      color: #373737;
+      font-weight: 500;
+    }
+    a.txt_point {
+      color: $main__point-color;
+    }
+    .arrow {
+      color: #373737;
+    }
+  }
+}
+// faq end
+
+// information start
+.information {
+  .inner {
+    padding: 11rem 0;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  &__title {
+    display: flex;
+    width: 100%;
+    span {
+      text-align: left;
+      &:nth-child(1) {
+        font-size: 4rem;
+        line-height: 6.3rem;
+        color: #373737;
+        font-weight: 800;
+        margin-right: 8rem;
+      }
+      &:nth-child(2) {
+        font-size: 1.8rem;
+        line-height: 3.2rem;
+        width: 60%;
+        // margin-top: 1.8rem;
+      }
+    }
+  }
+  &__logo {
+    width: 100%;
+    height: 30rem;
+    margin-top: 9.3rem;
+    background-image: url(/img/information_logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    border: solid 1px #c5c5c5;
+    background-color: #fff;
+    background-size: 30%;
+  }
+  &__ci {
+    width: 100%;
+    height: 30rem;
+    margin-top: 10.8rem;
+    background-color: #f6f6f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // background-size: 30%;
+    .ci-1 {
+      width: 40.4rem;
+      height: 21rem;
+      background-image: url(/img/information-ci-1.png);
+      background-position: center;
+      background-size: cover;
+      margin-right: 21rem;
+    }
+    .ci-2 {
+      width: 48.6rem;
+      height: 18.4rem;
+      background-image: url(/img/information-ci-2.png);
+      background-position: center;
+      background-size: cover;
+    }
+  }
+  &__p {
+    font-size: 1.6rem;
+    line-height: 4rem;
+    text-align: left;
+    margin-top: 2rem;
+  }
+}
+.information-2 {
+  background-color: #f6f6f6;
+  .inner {
+    padding: 11rem 0 20rem 0;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  &__title {
+    p {
+      text-align: left;
+      &:nth-child(1) {
+        font-size: 4rem;
+        line-height: 6.3rem;
+        color: #373737;
+        font-weight: 800;
+      }
+      &:nth-child(2) {
+        font-size: 1.8rem;
+        line-height: 4rem;
+        margin-top: 1.8rem;
+      }
+    }
+  }
+  &__color-bg--1,
+  &__color-bg--2 {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding: 2.5rem;
+    span {
+      color: white;
+      margin-right: 1.8rem;
+    }
+  }
+  &__color-bg--1 {
+    background-color: #444444;
+    margin-top: 5.4rem;
+    height: 32rem;
+  }
+  &__color-bg--2 {
+    background-color: #8a57b2;
+    margin-top: 2rem;
+    height: 12.3rem;
+  }
+  &__color-bg--box {
+    width: 100%;
+    margin-top: 2rem;
+    height: 12.3rem;
+    display: flex;
+    justify-content: space-between;
+    span {
+      color: white;
+      margin-right: 1.8rem;
+    }
+  }
+  &__color-bg--3 {
+    background-color: #006583;
+    padding: 2.5rem;
+    display: flex;
+    align-items: flex-end;
+    width: 49%;
+  }
+  &__color-bg--4 {
+    background-color: #615ba4;
+    padding: 2.5rem;
+    display: flex;
+    align-items: flex-end;
+    width: 49%;
+  }
+}
+// information end
