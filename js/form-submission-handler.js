@@ -102,7 +102,7 @@
     var sendBtn = document.getElementById("sendBtn");
     thankYouMessage.style.display = "none";
     sendBtn.disabled = false;
-    sendBtn.style.background = "#074999";
+    sendBtn.style.background = "#2b4d84";
   }
   function loaded() {
     // bind to the submit event of our form
