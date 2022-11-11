@@ -29,7 +29,8 @@
     <link rel="shortcut icon" href="./img/logo_fav.png" />
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
         integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <!-- <script defer src="./js/youtube.js"></script> -->
@@ -40,7 +41,7 @@
 
 
 <body>
-    <nav class="nav">
+    <nav class="nav" data-aos="fade-down" data-aos-anchor-placement="top-center" data-aos-duration="800">
         <div class="inner">
             <a href="index.html">
                 <div class="nav__logo"></div>
@@ -138,7 +139,8 @@
     <section class="subtitle__product">
         <div class="subtitle__blk"></div>
         <div class="inner">
-            <div class="subtitle__title">
+            <div class="subtitle__title" data-aos="zoom-in" data-aos-anchor-placement="top-center"
+                data-aos-duration="1500">
                 <p>제품소개</p>
                 <p>PRODUCT DESCRIPTIONS</p>
             </div>
@@ -163,25 +165,26 @@
     </section>
     <section class="product">
         <div class="inner">
-            <div class="product__title">
+            <div class="product__title" data-aos="fade-right" data-aos-anchor-placement="bottom-bottom"
+                data-aos-duration="1500">
                 <p>OUR PRODUCT</p>
                 <p>(주) 망고소프트는 클라이언트의 문제 해결을 위해 혁신적인 아이디어를 통한 참신한 디자인과 합리적인 개발을 제안합니다.</p>
             </div>
-            <div class="product__img"></div>
+            <div class="product__img " data-aos="fade-up" data-aos-duration="1500"></div>
             <div class="product__content">
-                <p>물고기자리</p>
+                <p data-aos="fade-right" data-aos-duration="1500">물고기자리</p>
                 <div class="product__content-ul">
-                    <div class="product__content-li">
+                    <div class="product__content-li" data-aos="fade-up" data-aos-duration="500">
                         <p>낚시 빅데이터를 가공하여 낚시인에게 포인트와 조황 정보를 제공합니다.</p>
                         <p>물고기자리는 수온과 입질 정보를 스마트 기기로 전송하는 스마트 낚시찌와 낚시앱입니다.</p>
                         <p>스마트 기기의 낚시앱을 통해 서버로 수온, 입질 정보를 전송하고 이를 가공해서 낚시인에게 포인트와 조황 정보 제공합니다.</p>
                     </div>
-                    <div class="product__content-li">
+                    <div class="product__content-li" data-aos="fade-up" data-aos-duration="1000">
                         <p>물고기자리는 기존의 낚시찌와 다릅니다.</p>
                         <p>낚시찌를 통해 입질정보를 낚시앱으로 송신하며 낚시 포인트, 조황 정보를 낚시앱을 통해 제공해 드립니다.</p>
                         <p>또한 낚시인들 사이에 커뮤니케이션 공간을 제공하여 정보 공유 및 소통할 수 있는 공간을 제공해 드립니다.</p>
                     </div>
-                    <div class="product__content-li">
+                    <div class="product__content-li" data-aos="fade-up" data-aos-duration="1500">
                         <p>성장하고 확장합니다.</p>
                         <p>현재 국내에 낚시인은 850만 명 정도이며, 시장 규모 또한 1조 7,000억원이 넘어가고 있습니다.</p>
                         <p>낚시도구뿐만이 아니라 낚시앱도 기존의 로우테크 산업에서 하이테크 산업으로 변화하고 있습니다.</p>
@@ -192,11 +195,11 @@
         </div>
         <div class="inner">
             <div class="product__img-2">
-                <div class="logo"></div>
+                <div class="logo" data-aos="zoom-in" data-aos-duration="1500"></div>
             </div>
             <div class="product__descrip">
-                <div class="product__descrip--img"></div>
-                <div class="product__descrip--text">
+                <div class="product__descrip--img" data-aos="fade-right" data-aos-duration="1500"></div>
+                <div class="product__descrip--text" data-aos="fade-left" data-aos-duration="1500">
                     <p>물고기자리 구멍찌</p>
                     <p>감성돔 낚시에 많이 쓰는 0.5호 ~ 3호까지 중 1호 중심으로 디자인되었고 찌 부력에 맞춰 찌의 자중을 선택하고 찌의 모양을 고려했습니다. 윗부분과 아랫부분이 스크루
                         방식으로 결합되며, 오링을 사용하여 침수를 예방합니다. 구멍 찌 특유의 도넛 형태의 구성을 가졌습니다.</p>
@@ -224,6 +227,9 @@
             </div>
         </div>
     </section>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

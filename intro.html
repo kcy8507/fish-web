@@ -29,7 +29,8 @@
     <link rel="shortcut icon" href="./img/logo_fav.png" />
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
         integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <!-- <script defer src="./js/youtube.js"></script> -->
@@ -39,7 +40,7 @@
 </head>
 
 <body>
-    <nav class="nav">
+    <nav class="nav" data-aos="fade-down" data-aos-anchor-placement="top-center" data-aos-duration="800">
         <div class="inner">
             <a href="index.html">
                 <div class="nav__logo"></div>
@@ -137,23 +138,27 @@
     <section class="subtitle__intro">
         <div class="subtitle__blk"></div>
         <div class="inner">
-            <div class="subtitle__title">
+            <div class="subtitle__title" data-aos="zoom-in" data-aos-anchor-placement="top-center"
+                data-aos-duration="1500">
                 <p>회사소개</p>
                 <p>ABOUT THE COMPANY</p>
             </div>
             <div class="subtitle__btn">
                 <a href="#">
-                    <button class="about active__btn">
+                    <button class="about active__btn" data-aos="fade-up" data-aos-anchor-placement="center-center"
+                        data-aos-duration="500">
                         ABOUT
                     </button>
                 </a>
                 <a href="company.html">
-                    <button class="company">
+                    <button class="company" data-aos="fade-up" data-aos-anchor-placement="center-center"
+                        data-aos-duration="1000">
                         회사개요
                     </button>
                 </a>
                 <a href="map.html">
-                    <button class="map">
+                    <button class="map" data-aos="fade-up" data-aos-anchor-placement="center-center"
+                        data-aos-duration="1500">
                         오시는길
                     </button>
                 </a>
@@ -162,12 +167,13 @@
     </section>
     <section class="about">
         <div class="inner">
-            <div class="about__title">최상의 만족을 드리기 위해<br>
+            <div class="about__title" data-aos="fade-right" data-aos-anchor-placement="bottom-bottom"
+                data-aos-duration="1500">최상의 만족을 드리기 위해<br>
                 끊임없이 시스템을 연구합니다.
             </div>
             <div class="about__card">
-                <hr>
-                <div class="card card01">
+                <hr data-aos="fade-left" data-aos-duration="500">
+                <div class="card card01" data-aos="fade-right" data-aos-offset="100" data-aos-duration="1500">
                     <p class="card__title">Web & Mobile</p>
                     <p class="card__subtitle">
                         Web & Mobile App Development<br>
@@ -181,7 +187,7 @@
                         최고의 서비스를 제공합니다.
                     </p>
                 </div>
-                <div class="card card02">
+                <div class="card card02" data-aos="fade-right" data-aos-offset="200" data-aos-duration="1500">
                     <p class="card__title">Responsive Web</p>
                     <p class="card__subtitle">
                         smart phone,tablet, pc Screen<br>
@@ -195,7 +201,7 @@
                         최고의 서비스를 제공합니다.
                     </p>
                 </div>
-                <div class="card card03">
+                <div class="card card03" data-aos="fade-right" data-aos-offset="300" data-aos-duration="1500">
                     <p class="card__title">Development</p>
                     <p class="card__subtitle">
                         Mobile applicaiton<br>
@@ -209,7 +215,7 @@
                         발전할 수 있도록 방향을 제시합니다.
                     </p>
                 </div>
-                <div class="card card04">
+                <div class="card card04" data-aos="fade-right" data-aos-offset="400" data-aos-duration="1500">
                     <p class="card__title">Media Marketing</p>
                     <p class="card__subtitle">
                         Social Media Marketing<br>
@@ -229,31 +235,31 @@
     <section class="about-2">
         <!-- <div class="about-2__bg"></div> -->
         <div class="inner">
-            <div class="about-2__title">
+            <div class="about-2__title" data-aos="fade-left" data-aos-duration="1500">
                 <p>패키지화된 최적의 <br> 운영 시스템 서비스를 제공합니다.</p>
                 <p>(주) 망고소프트는 클라이언트의 문제 해결을 위해 혁신적인 아이디어를 통한 참신한 디자인과 합리적인 개발을 제안합니다.</p>
             </div>
             <div class="about-2__content">
                 <div class="inner">
-                    <div class="card">
+                    <div class="card" data-aos="fade-up" data-aos-offset="100" data-aos-duration="1500">
                         <div class="card-icon"></div>
                         <p>Service Planning</p>
                         <span>Contents / Community 전략 제시</span><span>Web Style Guide (WSG)</span>
                         <p>비즈니스의 철저한 분석을 통해 추출한 양질의 콘텐츠를 어떻게 가공하고 보여줄 것인지 효과적인 운영 전략 제시합니다.</p>
                     </div>
-                    <div class="card">
+                    <div class="card" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1500">
                         <div class="card-icon"></div>
                         <p>Business Consulting</p>
                         <span>Business Modeling 수립 및 성공적 구현</span><span>새로운 Business 개발 및 전략 수립</span>
                         <p>고객을 위한 최상의 솔루션을 제공해 드리는 최고의 컨설턴트로서, 지속적으로 발전할 수 있도록 방향을 제시합니다.</p>
                     </div>
-                    <div class="card">
+                    <div class="card" data-aos="fade-up" data-aos-offset="300" data-aos-duration="1500">
                         <div class="card-icon"></div>
                         <p>Branding</p>
                         <span>Brand Identity의 브랜드 충성도 극대</span><span>Brand name과 도메인 개발</span>
                         <p>전문적인 지식과 풍부한 경험을 가지고 고객의 온라인 비즈니스가 성공적으로 영위될 수 있도록 전략적으로 컨설팅 합니다.</p>
                     </div>
-                    <div class="card">
+                    <div class="card" data-aos="fade-up" data-aos-offset="400" data-aos-duration="1500">
                         <div class="card-icon"></div>
                         <p>Marketing Consulting</p>
                         <span>성공적인 Marketing 전략 수립</span><span>Promotion & Event</span><span>Website 접속자(로그분석) 관리</span>
@@ -283,6 +289,9 @@
             </div>
         </div>
     </section>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

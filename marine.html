@@ -29,7 +29,8 @@
     <link rel="shortcut icon" href="./img/logo_fav.png" />
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
         integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <!-- <script defer src="./js/youtube.js"></script> -->
@@ -39,7 +40,7 @@
 </head>
 
 <body>
-    <nav class="nav">
+    <nav class="nav" data-aos="fade-down" data-aos-anchor-placement="top-center" data-aos-duration="800">
         <div class="inner">
             <a href="index.html">
                 <div class="nav__logo"></div>
@@ -137,7 +138,8 @@
     <section class="subtitle__marine">
         <div class="subtitle__marine__blk"></div>
         <div class="inner">
-            <div class="subtitle__title">
+            <div class="subtitle__title" data-aos="zoom-in" data-aos-anchor-placement="top-center"
+                data-aos-duration="1500">
                 <p>바다 정보</p>
                 <p>MARINE FORECAST</p>
             </div>
@@ -163,11 +165,11 @@
     <section class="marine">
 
         <div class="inner">
-            <div class="marine__title">
+            <div class="marine__title" data-aos="fade-right" data-aos-duration="1500">
                 <p>어항정보</p>
                 <p>(주) 망고소프트는 클라이언트의 문제 해결을 위해 혁신적인 아이디어를 통한 참신한 디자인과 합리적인 개발을 제안합니다.</p>
             </div>
-            <div class="marine__btn">
+            <div class="marine__btn" data-aos="fade-up" data-aos-duration="1500">
                 <span class="all select__btn">전체</span>
                 <span class="">부산광역시</span>
                 <span class="">인천광역시</span>
@@ -178,7 +180,7 @@
                 <span class="">경상도</span>
                 <span class="">제주도</span>
             </div>
-            <div id="board-list">
+            <div id="board-list" data-aos="fade-up" data-aos-duration="1500">
                 <table class="board-table">
                     <thead>
                         <tr>
@@ -230,6 +232,9 @@
             </div>
         </div>
     </section>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

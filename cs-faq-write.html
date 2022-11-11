@@ -28,6 +28,8 @@
     <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery.mb.YTPlayer/3.3.9/css/jquery.mb.YTPlayer.min.css" /> -->
     <link rel="shortcut icon" href="./img/logo_fav.png" />
     <link rel="stylesheet" href="./css/cs-faq-list.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
         integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script defer src="./js/main.js"></script>
@@ -35,7 +37,7 @@
 </head>
 
 <body>
-    <nav class="nav">
+    <nav class="nav" data-aos="fade-down" data-aos-anchor-placement="top-center" data-aos-duration="800">
         <div class="inner">
             <a href="index.html">
                 <div class="nav__logo"></div>
@@ -133,18 +135,21 @@
     <section class="subtitle__cs">
         <div class="subtitle__cs__blk"></div>
         <div class="inner">
-            <div class="subtitle__title">
+            <div class="subtitle__title" data-aos="zoom-in" data-aos-anchor-placement="top-center"
+                data-aos-duration="1500">
                 <p>고객지원</p>
                 <p>CUSTOMER SUPPORT</p>
             </div>
             <div class="subtitle__btn">
                 <a href="cs.html">
-                    <button class="cs_btn">
+                    <button class="cs_btn" data-aos="fade-up" data-aos-anchor-placement="center-center"
+                        data-aos-duration="500">
                         온라인문의
                     </button>
                 </a>
                 <a href="#">
-                    <button class="faq active__btn">
+                    <button class="faq active__btn" data-aos="fade-up" data-aos-anchor-placement="center-center"
+                        data-aos-duration="1000">
                         FAQ
                     </button>
                 </a>
@@ -158,7 +163,8 @@
     </section>
     <section class="faq">
         <div class="inner">
-            <div class="faq__title">
+            <div class="faq__title" data-aos="fade-right" data-aos-anchor-placement="bottom-bottom"
+                data-aos-duration="1500">
                 <p>제목</p>
                 <p>2022.10.20</p>
             </div>
@@ -187,6 +193,9 @@
             </div>
         </div>
     </section>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

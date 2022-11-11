@@ -29,7 +29,8 @@
     <link rel="shortcut icon" href="./img/logo_fav.png" />
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
         integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <!-- <script defer src="./js/youtube.js"></script> -->
@@ -40,7 +41,7 @@
 
 
 <body>
-    <nav class="nav">
+    <nav class="nav" data-aos="fade-down" data-aos-anchor-placement="top-center" data-aos-duration="800">
         <div class="inner">
             <a href="index.html">
                 <div class="nav__logo"></div>
@@ -138,18 +139,21 @@
     <section class="subtitle__cs">
         <div class="subtitle__cs__blk"></div>
         <div class="inner">
-            <div class="subtitle__title">
+            <div class="subtitle__title" data-aos="zoom-in" data-aos-anchor-placement="top-center"
+                data-aos-duration="1500">
                 <p>고객지원</p>
                 <p>CUSTOMER SUPPORT</p>
             </div>
             <div class="subtitle__btn">
                 <a href="#">
-                    <button class="cs_btn active__btn">
+                    <button class="cs_btn active__btn" data-aos="fade-up" data-aos-anchor-placement="center-center"
+                        data-aos-duration="500">
                         온라인문의
                     </button>
                 </a>
                 <a href="cs-faq-list.html">
-                    <button class="faq">
+                    <button class="faq" data-aos="fade-up" data-aos-anchor-placement="center-center"
+                        data-aos-duration="1000">
                         FAQ
                     </button>
                 </a>
@@ -163,11 +167,12 @@
     </section>
     <section class="cs">
         <div class="inner">
-            <div class="cs__title">
+            <div class="cs__title" data-aos="fade-right" data-aos-anchor-placement="bottom-bottom"
+                data-aos-duration="1500">
                 <p>온라인문의</p>
                 <p>고객님께서 소중한 의견을 작성해주시면 문의하신 내용은 메일 또는 전화를 통해 자세한 답변을 드리겠습니다.</p>
             </div>
-            <div class="connect__content-email">
+            <div class="connect__content-email" data-aos="fade-up" data-aos-duration="1500">
                 <form class="form-elements gform" method="POST"
                     action="https://script.google.com/macros/s/AKfycbw11RAcMaMKd8flYZZrEnIL9kbRVksw-862Rnvx/exec">
                     <div class="contact_form">
@@ -233,6 +238,9 @@
             </div>
         </div>
     </section>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
