@@ -1166,7 +1166,8 @@ ul.slick-dots button {
   margin-top: 1.8rem;
 }
 .marine__btn {
-  margin-top: 4rem;
+  display: flex;
+  flex-wrap: wrap;
 }
 .marine__btn span {
   width: auto;
@@ -1178,6 +1179,7 @@ ul.slick-dots button {
   margin-right: 2rem;
   color: #929292;
   font-size: 1.8rem;
+  margin-top: 3.1rem;
   cursor: pointer;
 }
 .marine__btn span.select__btn {
@@ -1709,6 +1711,12 @@ ul.slick-dots button {
   cursor: pointer;
 }
 
+@media screen and (max-width: 1700px) {
+  .marine__btn {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 @media screen and (max-width: 1515px) {
   .nav {
     height: 6.4rem;
@@ -2156,10 +2164,8 @@ ul.slick-dots button {
     margin-right: 1.8rem;
     border-radius: 50px;
     font-size: 2rem;
-    margin-bottom: 3.1rem;
   }
   .marine__btn {
-    margin-top: 7.3rem;
     display: flex;
     flex-wrap: wrap;
   }
@@ -2735,7 +2741,7 @@ ul.slick-dots button {
     padding: 1rem 2.4rem;
     margin-right: 0.7rem;
     font-size: 1.8rem;
-    margin-bottom: 0.8rem;
+    margin-top: 0.8rem;
     line-height: 2rem;
   }
   .marine__btn {

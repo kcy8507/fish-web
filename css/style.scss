@@ -1262,7 +1262,12 @@ ul.slick-dots {
     }
   }
   &__btn {
-    margin-top: 4rem;
+    // margin-top: 4rem;
+
+    // margin-top: 7.3rem;
+    display: flex;
+    flex-wrap: wrap;
+
     span {
       width: auto;
       height: 4.1rem;
@@ -1273,6 +1278,7 @@ ul.slick-dots {
       margin-right: 2rem;
       color: #929292;
       font-size: 1.8rem;
+      margin-top: 3.1rem;
       cursor: pointer;
       &.select__btn {
         background-color: #2b4d84;
@@ -1872,7 +1878,13 @@ ul.slick-dots {
   }
 }
 // information-gallery end
-
+@media screen and (max-width: 1700px) {
+  .marine__btn {
+    // margin-top: 7.3rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 @media screen and (max-width: 1515px) {
   .nav {
     height: 6.4rem;
@@ -1927,6 +1939,7 @@ ul.slick-dots {
     // flex-direction: column;
   }
 }
+
 @media screen and (max-width: 992px) {
   .nav {
     height: 6.4rem;
@@ -2362,10 +2375,10 @@ ul.slick-dots {
     margin-right: 1.8rem;
     border-radius: 50px;
     font-size: 2rem;
-    margin-bottom: 3.1rem;
+    // margin-bottom: 3.1rem;
   }
   .marine__btn {
-    margin-top: 7.3rem;
+    // margin-top: 7.3rem;
     display: flex;
     flex-wrap: wrap;
   }
@@ -2960,7 +2973,7 @@ ul.slick-dots {
     padding: 1rem 2.4rem;
     margin-right: 0.7rem;
     font-size: 1.8rem;
-    margin-bottom: 0.8rem;
+    margin-top: 0.8rem;
     line-height: 2rem;
   }
   .marine__btn {
