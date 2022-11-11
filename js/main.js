@@ -1,10 +1,21 @@
 $(function () {
-  $(".dropdown__menu").click(function (e) {
-    // console.log($(e.target));
-    // e.preventDefault();
-    $(".dropdown").toggleClass("flex__box");
-    $(".nav").css("borderBottom", "1px solid #bcbcbc");
-    // $(".nav").css("height", "100%");
+  $(".intro_menu").click(function (e) {
+    $(".intro_list").css("display", "flex");
+    $(".cs_list").css("display", "none");
+    $(".information_list").css("display", "none");
+    $(".mega__menu").slideToggle();
+  });
+  $(".cs_menu").click(function (e) {
+    $(".cs_list").css("display", "flex");
+    $(".intro_list").css("display", "none");
+    $(".information_list").css("display", "none");
+    $(".mega__menu").slideToggle();
+  });
+  $(".information_menu").click(function (e) {
+    $(".information_list").css("display", "flex");
+    $(".cs_list").css("display", "none");
+    $(".intro_list").css("display", "none");
+    $(".mega__menu").slideToggle();
   });
 
   $(document).on("mousewheel", function (e) {
@@ -13,14 +24,15 @@ $(function () {
     // console.log(wheel);
     // $("body").animate();
     if ($(document).scrollTop() >= $(".nav").height()) {
-      $(".nav").css({ backgroundColor: "white", borderBottom: "none" });
+      $(".nav").css({ backgroundColor: "white", borderBottom: "none", boxShadow: "0 0 6px 0 rgba(0, 0, 0, 0.31)" });
+      $(".mega__menu").css({ backgroundColor: "white", borderBottom: "none", boxShadow: "0 0 6px 0 rgba(0, 0, 0, 0.31)" });
       $(".nav li, .nav a").css("color", "black");
       $(".dropdown").removeClass("flex__box");
       $(".nav__logo").css("backgroundImage", "url(img/logo_color.png)");
       $(".nav__menu-btn").css("backgroundImage", "url(/img/menu_btn-blk.png)");
     } else {
-      // $(".nav").css({ backgroundColor: "transparent", borderBottom: "1px solid white" });
-      $(".nav").css({ backgroundColor: "transparent" });
+      $(".mega__menu").css({ backgroundColor: "transparent", boxShadow: "0 0 6px 0 rgba(0, 0, 0, 0.31)" });
+      $(".nav").css({ backgroundColor: "transparent", boxShadow: "0 0 6px 0 rgba(0, 0, 0, 0.31)" });
       $(".nav li, .nav a").css("color", "white");
       $(".nav__logo").css("backgroundImage", "url(img/logo.png)");
       $(".nav__menu-btn").css("backgroundImage", "url(/img/menu_btn.png)");
@@ -39,7 +51,7 @@ $(function () {
 
   $(document).on("touchmove", function (e) {
     if ($(document).scrollTop() >= $(".nav__mobile").height()) {
-      $(".nav__mobile").css({ backgroundColor: "white" });
+      $(".nav__mobile").css({ backgroundColor: "white", boxShadow: "0 0 6px 0 rgba(0, 0, 0, 0.31)" });
       $(".nav__logo-mobile").css("backgroundImage", "url(img/logo_color.png)");
       $(".nav__menu-btn").css("backgroundImage", "url(/img/menu_btn-blk.png)");
     } else {
