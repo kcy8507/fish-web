@@ -721,15 +721,20 @@ ul.slick-dots {
   }
   &__btn {
     margin-top: 6.5rem;
-    button {
-      color: white;
-      line-height: 3.6rem;
-      width: 11.6rem;
-      height: 3.8rem;
-      background: none;
-      border: 1px solid white;
-      border-radius: 3.1rem;
-      margin-right: 2.6rem;
+    a {
+      button {
+        color: white;
+        line-height: 3.6rem;
+        width: 11.6rem;
+        height: 3.8rem;
+        background: none;
+        border: 1px solid white;
+        border-radius: 3.1rem;
+        margin-right: 2.6rem;
+      }
+      &:last-of-type button {
+        margin-right: 0;
+      }
     }
     .active__btn {
       color: #363636;
@@ -2095,12 +2100,17 @@ ul.slick-dots {
     }
     &__btn {
       margin-top: 4.8rem;
-      button {
-        line-height: 3.9rem;
-        width: 20rem;
-        height: 4rem;
-        font-size: 1.8rem;
-        margin-right: 3rem;
+      a {
+        button {
+          line-height: 3.9rem;
+          width: 20rem;
+          height: 4rem;
+          font-size: 1.8rem;
+          margin-right: 3rem;
+        }
+        &:last-of-type button {
+          margin-right: 0;
+        }
       }
     }
   }
@@ -2734,13 +2744,18 @@ ul.slick-dots {
     }
     &__btn {
       margin-top: 4.8rem;
-      button {
-        line-height: 1.9rem;
-        width: 90%;
-        height: 4rem;
-        font-size: 1.6rem;
-        margin-top: 1rem;
-        margin-right: 0;
+      a {
+        button {
+          line-height: 1.9rem;
+          width: 90%;
+          height: 4rem;
+          font-size: 1.6rem;
+          margin-top: 1rem;
+          margin-right: 0;
+        }
+        &:last-of-type button {
+          margin-right: 0;
+        }
       }
     }
   }

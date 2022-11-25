@@ -700,7 +700,7 @@ ul.slick-dots button {
 .subtitle__btn {
   margin-top: 6.5rem;
 }
-.subtitle__btn button {
+.subtitle__btn a button {
   color: white;
   line-height: 3.6rem;
   width: 11.6rem;
@@ -709,6 +709,9 @@ ul.slick-dots button {
   border: 1px solid white;
   border-radius: 3.1rem;
   margin-right: 2.6rem;
+}
+.subtitle__btn a:last-of-type button {
+  margin-right: 0;
 }
 .subtitle__btn .active__btn {
   color: #363636;
@@ -1905,12 +1908,15 @@ ul.slick-dots button {
   .subtitle__btn {
     margin-top: 4.8rem;
   }
-  .subtitle__btn button {
+  .subtitle__btn a button {
     line-height: 3.9rem;
     width: 20rem;
     height: 4rem;
     font-size: 1.8rem;
     margin-right: 3rem;
+  }
+  .subtitle__btn a:last-of-type button {
+    margin-right: 0;
   }
   .about__title {
     font-size: 3.6rem;
@@ -2505,12 +2511,15 @@ ul.slick-dots button {
   .subtitle__btn {
     margin-top: 4.8rem;
   }
-  .subtitle__btn button {
+  .subtitle__btn a button {
     line-height: 1.9rem;
     width: 90%;
     height: 4rem;
     font-size: 1.6rem;
     margin-top: 1rem;
+    margin-right: 0;
+  }
+  .subtitle__btn a:last-of-type button {
     margin-right: 0;
   }
   .subtitle__btn {
