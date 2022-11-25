@@ -1169,6 +1169,7 @@ ul.slick-dots button {
   margin-top: 1.8rem;
 }
 .marine__btn {
+  margin-top: 4rem;
   display: flex;
   flex-wrap: wrap;
 }
@@ -1182,7 +1183,7 @@ ul.slick-dots button {
   margin-right: 2rem;
   color: #929292;
   font-size: 1.8rem;
-  margin-top: 3.1rem;
+  margin-top: 1.3rem;
   cursor: pointer;
 }
 .marine__btn span.select__btn {
@@ -1270,6 +1271,66 @@ ul.slick-dots button {
 }
 .marine .foot .arrow {
   color: #373737;
+}
+
+.marine__info-table {
+  border-radius: 26px;
+  box-shadow: 0 0 20px 0 rgba(43, 77, 132, 0.27);
+  background-color: #eaf2fe;
+  margin-top: 7.6rem;
+  padding: 38px 60px 60px;
+  width: 100%;
+}
+.marine__info-table .marine__info-board {
+  margin-top: 3.1rem;
+  width: 100%;
+  display: flex;
+}
+.marine__info-table .marine__info-board-box {
+  width: 100%;
+}
+.marine__info-table .marine__info-board-box .title {
+  height: 5.6rem;
+  background-color: #2b4d84;
+  line-height: 5.5rem;
+  color: white;
+  font-size: 2.2rem;
+  text-align: center;
+}
+.marine__info-table .marine__info-board-box .content {
+  display: flex;
+  border: solid 1px #dedede;
+  background-color: #fff;
+  height: 5.6rem;
+  text-align: left;
+  justify-content: space-between;
+  padding: 2rem 1.7rem;
+}
+
+.marine__info-title {
+  display: flex;
+}
+
+.marine__info-img {
+  background-image: url(/img/marine__info-img.png);
+  width: 7.2rem;
+  height: 4.6rem;
+  background-size: cover;
+  margin-right: 3.2rem;
+}
+
+.marine__info-text p {
+  text-align: left;
+}
+.marine__info-text p:nth-child(1) {
+  font-size: 2.4rem;
+  color: #414141;
+  font-weight: 700;
+}
+.marine__info-text p:nth-child(2) {
+  font-size: 1.6rem;
+  margin-top: 0.6rem;
+  color: #646464;
 }
 
 .cs .inner {
@@ -2182,6 +2243,15 @@ ul.slick-dots button {
   .marine .foot td {
     padding-top: 7.7rem;
   }
+  .marine__info-table .marine__info-board {
+    margin-top: 3.1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .marine__info-table .marine__info-board-box:nth-child(2) {
+    margin-top: 2.5rem;
+  }
   .cs .inner {
     padding: 8rem 0;
   }
@@ -2765,6 +2835,19 @@ ul.slick-dots button {
   .marine #board-list {
     width: 100%;
     overflow-x: scroll;
+  }
+  .marine__info-table {
+    margin-top: 4.5rem;
+    padding: 30px 22px 30px;
+  }
+  .marine__info-table .marine__info-board-box .title {
+    height: 4.5rem;
+    line-height: 4.5rem;
+    font-size: 1.8rem;
+  }
+  .marine__info-table .marine__info-board-box .content {
+    height: 4.5rem;
+    padding: 1.5rem 1.7rem;
   }
   .cs__title p:nth-child(1) {
     font-size: 2.4rem;
