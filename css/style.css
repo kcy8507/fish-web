@@ -1827,6 +1827,13 @@ ul.slick-dots button {
   .side__nav-container {
     max-width: calc(100% - 3.5rem);
   }
+  .footer .inner {
+    padding: 6rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+  }
 }
 @media screen and (max-width: 992px) {
   .nav {
@@ -1921,6 +1928,9 @@ ul.slick-dots button {
   }
   .main-3__content {
     justify-content: flex-end;
+  }
+  .video_container video {
+    left: -260px;
   }
   .footer .inner {
     padding: 4rem 0;
@@ -2154,6 +2164,29 @@ ul.slick-dots button {
   }
   .map__address-box p:nth-of-type(2) {
     margin-top: 1.4rem;
+  }
+  .map__address {
+    flex-direction: column;
+  }
+  .map__address-box {
+    width: 100%;
+    margin-top: 3.6rem;
+  }
+  .map__address-box p:nth-of-type(1) {
+    font-size: 1.6rem;
+  }
+  .map__address-box p:nth-of-type(2) {
+    margin-top: 1.6rem;
+    font-size: 1.6rem;
+  }
+  .map__address-box:nth-child(1) .address-icon {
+    margin-right: 4.4rem;
+  }
+  .map__address-box:nth-child(2) .address-icon {
+    margin-right: 4.4rem;
+  }
+  .map__address-box:nth-child(3) .address-icon {
+    margin-right: 4.4rem;
   }
   .product__img {
     margin-top: 4rem;
@@ -2527,6 +2560,9 @@ ul.slick-dots button {
     height: 4rem;
     font-size: 1.6rem;
     margin-top: 3.2rem;
+  }
+  .video_container video {
+    left: -337px;
   }
   .footer .inner {
     padding: 3.6rem 0 2.3rem 0;
